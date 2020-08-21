@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Directive } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '<score-board></score-board>',
   styleUrls: ['./app.component.less']
-})
-export class AppComponent {
-  title = 'CanadaDrives';
-}
+}) 
+
+export class AppComponent {}

@@ -1,0 +1,8 @@
+<div id="{{user.name}}" class="user-entry layout-row" *ngIf="user">
+	<div class="name">{{user.name | titlecase}}</div>
+	<div class="buttons">
+		<button mat-raised-button (click)="addScore(user.name)">+</button>
+		<button mat-raised-button (click)="subScore(user.name)">-</button>
+	</div>
+	<div class="score-display">{{user.score}} points</div>
+</div>
