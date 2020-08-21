@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserEntryComponent } from './user-entry/user-entry.component';
 import { ScoreBoardComponent } from './score-board/score-board.component';
+
+import { User } from './user';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,12 @@ import { ScoreBoardComponent } from './score-board/score-board.component';
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-  MatButtonModule
+	MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

@@ -15,13 +15,14 @@ To run this application locally, there are the following requirements:
 * angular cli (after installing Nodejs, open and admin elevated terminal and run `npm i -g @angular/cli`
 
 Once installed: 
-* open a terminal and navigate to this directory.
-* Execute the command `ng serve` to spin up an instance of this application in your browser
+* Open a terminal and navigate to the directory containing this README.
+* Execute `npm i` to install dependencies.
+* Execute the command `ng serve` to spin up an instance of this application in your browser.
 * Navigate to http://localhost:4200/ in your browser. The application should now be accessible.
 
 To run unit tests:
-* open a terminal and navigate to this directory.
-* Execute the command `ng test` to trigger karma tests in a chrome dev instance.
+* Open a terminal and navigate to the directory containing this README.
+* Execute the command `ng test` to trigger karma tests in a chrome dev instance (may require firewall permissions).
 
 ## Development server
 
